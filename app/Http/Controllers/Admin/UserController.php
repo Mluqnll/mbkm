@@ -36,7 +36,7 @@ class UserController extends Controller
         $user->handleUploadFoto();
         $user->save();
 
-        return redirect('user')->with('success', 'Data Berhasil Disimpan');
+        return redirect('admin/user')->with('success', 'Data Berhasil Disimpan');
     }
 
     /**
@@ -67,7 +67,7 @@ class UserController extends Controller
         if (request('foto')) $user->handleUploadFoto();
         $user->save();
 
-        return redirect('user')->with('success', 'Data Berhasil Diedit');
+        return redirect('admin/user')->with('success', 'Data Berhasil Diedit');
     }
 
     /**
@@ -76,6 +76,7 @@ class UserController extends Controller
     public function destroy(string $user)
     {
         $user = Admin::find($user);
+        $user->handleDelete();
         $user->delete();
         return back()->with('danger', 'Data Berhasil diHapus');
     }

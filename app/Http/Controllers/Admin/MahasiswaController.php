@@ -37,7 +37,7 @@ class MahasiswaController extends Controller
         $mahasiswa->nomor_hp = request('nomor_hp');
         $mahasiswa->save();
 
-        return redirect('mahasiswa')->with('succes', 'Data Berhasil Disimpan');
+        return redirect('admin/mahasiswa')->with('succes', 'Data Berhasil Disimpan');
     }
 
     /**
@@ -69,7 +69,7 @@ class MahasiswaController extends Controller
         $mahasiswa->nomor_hp = request('nomor_hp');
         $mahasiswa->save();
 
-        return redirect('mahasiswa')->with('succes', 'Data Berhasil Diedit');
+        return redirect('admin/mahasiswa')->with('succes', 'Data Berhasil Diedit');
     }
 
     /**

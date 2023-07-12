@@ -40,7 +40,7 @@ class NilaiController extends Controller
         $nilai->nilai = request('nilai');
         $nilai->save();
 
-        return redirect('nilai')->with('succes', 'Data berhasil ditambahkan');
+        return redirect('admin/nilai')->with('succes', 'Data berhasil ditambahkan');
     }
 
     /**
