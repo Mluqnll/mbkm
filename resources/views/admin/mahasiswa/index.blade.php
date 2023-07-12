@@ -15,6 +15,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Action</th>
+                                <th>NIM</th>
                                 <th>Nama</th>
                                 <th>Program Studi</th>
                                 <th>No Handphone</th>
@@ -32,6 +33,7 @@
                                             <x-layout.button.delete url="admin/mahasiswa" id="{{ $mahasiswa->id }}" />
                                         </div>
                                     </td>
+                                    <td>{{ $mahasiswa->nim }}</td>
                                     <td>{{ $mahasiswa->nama }}</td>
                                     <td>{{ $mahasiswa->program_studi }}</td>
                                     <td>{{ $mahasiswa->nomor_hp }}</td>

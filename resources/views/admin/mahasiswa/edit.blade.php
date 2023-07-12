@@ -3,7 +3,7 @@
         <div class="col-lg-12">
             <div class="card">
                 <div class="card-header">
-                    <a href="{{url('adminmahasiswa')}}" class="btn btn-primary">Kembali </a>
+                    <a href="{{url('admin/mahasiswa')}}" class="btn btn-primary">Kembali </a>
                     <h4 class="card-title">Edit Data Mahasiswa</h4>
                 </div>
                 <!--end card-header-->
