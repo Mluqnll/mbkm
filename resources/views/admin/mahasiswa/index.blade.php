@@ -29,8 +29,8 @@
                                     <td class="text-center">{{ $loop->iteration }}</td>
                                     <td>
                                         <div class="btn-group">
-                                            <x-layout.button.edit url="admin/mahasiswa" id="{{ $mahasiswa->id }}" />
-                                            <x-layout.button.delete url="admin/mahasiswa" id="{{ $mahasiswa->id }}" />
+                                            <x-layout.button.edit url="admin/mahasiswa" id="{{ $mahasiswa->nim }}" />
+                                            <x-layout.button.delete url="admin/mahasiswa" id="{{ $mahasiswa->nim }}" />
                                         </div>
                                     </td>
                                     <td>{{ $mahasiswa->nim }}</td>
