@@ -8,7 +8,7 @@
                 </div>
                 <!--end card-header-->
                 <div class="card-body">
-                    <form action="{{ url('admin/mahasiswa', $mahasiswa->id) }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ url('admin/mahasiswa', $mahasiswa->nim) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method("PUT")
                         <div class="row">

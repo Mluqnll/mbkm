@@ -22,7 +22,6 @@ Route::group(['middleware' => 'auth:admin'], function () {
     Route::prefix('admin')->group(function () {
         Route::resource('/', AdminController::class);
         Route::resource('mahasiswa', MahasiswaController::class);
-        Route::delete('mahasiswa/{mahasiswa}', [MahasiswaController::class, 'destroy']);
         Route::resource('nilai', NilaiController::class);
         Route::resource('user', UserController::class);
     });
